@@ -72,25 +72,25 @@ namespace DZZ4
                 b = Convert.ToDecimal(Console.ReadLine());
                 Console.Write("c = ");
                 c = Convert.ToDecimal(Console.ReadLine());
-                if(a<=b && b<=c)
+                if(a>=b && b>=c)
                 {
                     Console.WriteLine($"{a} ; {b} ; {c}");
                 }
                 else
                 {
-                    if (a<=b && a<=c && c<=b)
+                    if (a>=b && a>=c && c>=b)
                     {
                         b = b + c;
                         c = b - c;
                         b = b - c;
                     }   
-                     else if (b<=a && b<=c && a<=c)
+                     else if (b>=a && b>=c && a>=c)
                      {
                          a = a + b;
                          b = a - b;
                          a = a - b;
                      }
-                     else if (b<=a && b<=c && c<=a)
+                     else if (b>=a && b>=c && c>=a)
                      {
                          decimal d; 
                          d = a;
@@ -99,7 +99,7 @@ namespace DZZ4
                          c = d;
 
                      }
-                     else if (c<=a && c<=b && a<=b)
+                     else if (c>=a && c>=b && a>=b)
                      {
                          decimal d;
                          d = a;
@@ -108,7 +108,7 @@ namespace DZZ4
                          b = d;
                          
                      }
-                     else if (c<=a && c<=b && b<=a)
+                     else if (c>=a && c>=b && b>=a)
                      {
                          a = c + a;
                          c = a - c;
